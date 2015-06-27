@@ -6,20 +6,31 @@ html {
 *::before {
   box-sizing: inherit; }
 
+body {
+  background-color: #0A638E; }
+
 .container {
-  width: 800px;
   margin: 50px auto;
-  border: 1px solid black;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  border-radius: 10px; }
   .container::after {
     clear: both;
     content: "";
     display: table; }
 
+h5 {
+  color: white;
+  text-align: center;
+  background-color: #797979;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Architects Daughter', cursive; }
+
 .new-level {
-  height: 535px; }
+  height: 535px;
+  background-color: white; }
 
 .box-holder {
   border-right: 1px solid black;
@@ -84,3 +95,9 @@ div#box.dropped {
 
 div#grid.focus {
   border: 1px solid red; }
+
+nav {
+  background-color: #7cb342; }
+
+.logo {
+  font-family: 'Architects Daughter', cursive; }
