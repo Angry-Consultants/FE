@@ -20,6 +20,11 @@
       $routeProvider.when('/', {
         templateUrl: 'js/levels/newlevel.tpl.html',
         controller: 'LevelCtrl'
+      })
+
+      .when('/register', {
+        templateUrl: 'js/users/register.tpl.html',
+        controller: 'RegisterCtrl'
       });
 
   }]);
