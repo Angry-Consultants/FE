@@ -1,0 +1,64 @@
+
+@import "app/css/vendor/bourbon/bourbon";
+@import "app/css/vendor/neat/neat";
+$border : 1px solid black;
+.container{
+  width: 800px;
+  margin: 50px auto;
+  border: $border;
+  @include outer-container;
+}
+.new-level{
+  height: 535px;
+
+}
+.box-holder{
+  border-right: $border;
+  width: 200px;
+  display: inline-block;
+}
+.new-left{
+  @include span-columns(4);
+  margin-right: 0;
+}
+.new-right{
+  @include span-columns(8);
+}
+
+.box{
+  background-color: black;
+  margin: 10px;
+
+}
+.b1{
+    height: 50px;
+    width: 50px;
+}
+.b2{
+    height: 100px;
+    width: 50px;
+}
+.b3{
+    height: 50px;
+    width: 100px;
+}
+.grid-holder{
+  height: 500px;
+  width: 500px;
+  border: $border;
+  display: inline-block;
+  margin: 10px;
+}
+.grid {
+  width: 500px;
+  .block {
+    // background-color: red;
+    border: 1px solid lightgrey;
+    width: 25px;
+    height: 25px;
+    // margin-right: 1px;
+    // margin-bottom: 1px;
+    float: left;
+  }
+
+}

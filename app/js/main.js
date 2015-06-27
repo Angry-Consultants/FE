@@ -1,1 +1,8 @@
-console.log('Angular Rocks', angular);
+;( function(){
+
+  'use strict';
+
+  $('#box1').draggable();
+
+
+}());
