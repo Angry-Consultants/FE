@@ -48,6 +48,7 @@ $border : 1px solid black;
   border: $border;
   display: inline-block;
   margin: 10px;
+  margin-left: 6px;
 }
 .grid {
   width: 500px;
@@ -61,4 +62,11 @@ $border : 1px solid black;
     float: left;
   }
 
+}
+div#box.dropped {
+    background: silver;
+}
+
+div#grid.focus {
+    border: 1px solid red;
 }

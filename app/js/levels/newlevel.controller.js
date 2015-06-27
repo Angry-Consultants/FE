@@ -8,12 +8,8 @@
 
     function ($scope, $location, LevelFactory) {
 
-      $('.box').draggable();
-      var area = $('.grid');
+      $('.box').draggable({ grid: [25, 25]});
 
-for ( var i = 0; i < 400; i ++) {
-  area.append('<div class="block"></div>');
-}
 
 
 

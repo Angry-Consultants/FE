@@ -64,7 +64,8 @@ html {
   width: 500px;
   border: 1px solid black;
   display: inline-block;
-  margin: 10px; }
+  margin: 10px;
+  margin-left: 6px; }
 
 .grid {
   width: 500px; }
@@ -73,3 +74,9 @@ html {
     width: 25px;
     height: 25px;
     float: left; }
+
+div#box.dropped {
+  background: silver; }
+
+div#grid.focus {
+  border: 1px solid red; }
