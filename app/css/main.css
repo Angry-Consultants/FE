@@ -24,14 +24,16 @@ html {
 .box-holder {
   border-right: 1px solid black;
   width: 200px;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 10px; }
 
 .new-left {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-top: 20px; }
   .new-left:last-child {
     margin-right: 0; }
 
@@ -45,7 +47,7 @@ html {
 
 .box {
   background-color: black;
-  margin: 10px; }
+  margin: 25px; }
 
 .b1 {
   height: 50px;
@@ -62,15 +64,16 @@ html {
 .grid-holder {
   height: 500px;
   width: 500px;
-  border: 1px solid black;
   display: inline-block;
   margin: 10px;
-  margin-left: 6px; }
+  margin-left: 6px;
+  margin-top: 20px; }
 
 .grid {
   width: 500px; }
   .grid .block {
     border: 1px solid lightgrey;
+    box-sizing: border-box;
     width: 25px;
     height: 25px;
     float: left; }
