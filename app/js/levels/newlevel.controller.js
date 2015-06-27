@@ -9,18 +9,36 @@
     function ($scope, $location, LevelFactory) {
 
       $('.box').draggable({
-        grid: [25, 25],
-        helper: "clone"
+       snap: '#grid, div',
+       snapMode: 'inner',
+       helper: 'clone',
+       revert: "invalid"
 
-      });
+       });
+
+
+
 
       $('#grid').droppable({
         accept: '.box',
-        drop: function(event){
-          console.log(event);
+        drop: function(e, ui){
+
+          if ($(ui.helper).hasClass('cloned')){
+            return
+          }
+            var stuff = $(ui.helper).clone();
+            stuff.addClass('cloned');
+            stuff.draggable({
+              snap: '#grid, div',
+              snapMode: 'inner'
+
+          });
+         $(this).append(stuff);
+
         }
 
       });
+
 
 
 
