@@ -52,6 +52,7 @@ $border : 1px solid black;
 }
 .grid {
   width: 500px;
+  overflow: hidden;
   .block {
     // background-color: red;
     border: 1px solid lightgrey;

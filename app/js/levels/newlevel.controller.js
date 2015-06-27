@@ -8,7 +8,7 @@
 
     function ($scope, $location, LevelFactory) {
 
-      $('.box').draggable({ grid: [25, 25]});
+      $('.box').draggable({ grid: [20, 20], containment: '.grid'});
 
 
 
