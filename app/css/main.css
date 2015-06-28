@@ -88,7 +88,8 @@ h5 {
 
 .grid {
   width: 500px;
-  overflow: auto; }
+  overflow: auto;
+  opacity: 0.8; }
   .grid .block {
     border: 1px solid lightgrey;
     box-sizing: border-box;
@@ -121,3 +122,8 @@ canvas {
 .canvas-holder {
   background-image: url(images/wallpaper.png);
   background-size: 77%; }
+
+.score {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  margin-left: 20px; }
