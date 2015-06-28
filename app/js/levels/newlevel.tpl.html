@@ -9,6 +9,20 @@
     <div id="box3" class="box b3">
     </div>
   </div>
+
+
+    <div class="row join">
+    <form class="col s12" ng-submit="newLevel(lvl)">
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" ng-model="lvl.title">
+          <label for="title">Title</label>
+        </div>
+      </div>
+      <button type="submit" class="waves-effect waves-light btn">Submit</button>
+    </form>
+  </div>
+
 </div>
 <div class="new-right">
   <div class="grid-holder">
@@ -19,6 +33,9 @@
 
   </div>
 </div>
+
+
+
 </div>
   <script>
   var area = $('.grid');  for ( var i = 0; i < 400; i ++) {
