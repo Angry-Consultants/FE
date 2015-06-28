@@ -15,23 +15,29 @@
     var grid = $('.grid'),
           gTop = grid.offset().top,
           gLeft = grid.offset().left;
-          cloned = $('.cloned');
+          cloned = $('.cloned'),
+          coordinates = [],
+          offsetCollection = [],
 
 
-    var offsetCollection = [];
+
     cloned.each(function() {
-         offsetCollection.push(
-           $(this).offset()
-         );
-    });
-    var coordinates = [];
+           offsetCollection.push(
+             $(this).offset()
+           );
 
-    offsetCollection.forEach( function(obj) {
-      var yy = (obj.top - gTop)/25 >> 0;
-      var xx = (obj.left - gLeft)/25 >> 0;
-      coordinates.push({x: xx, y: yy})
+
+      offsetCollection.forEach( function(obj) {
+        var yy = (obj.top - gTop)/25 >> 0;
+        var xx = (obj.left - gLeft)/25 >> 0;
+        coordinates.push({x: xx, y: yy})
+
+      });
 
     });
+
+
+
 
 
 
