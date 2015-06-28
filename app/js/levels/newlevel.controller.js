@@ -7,7 +7,6 @@
   .controller('LevelCtrl', ['$scope','$location', 'LevelFactory',
 
     function ($scope, $location, LevelFactory) {
-
       $('.box').draggable({
        snap: '#grid, div',
        snapMode: 'inner',
@@ -24,7 +23,7 @@
         drop: function(e, ui){
 
           if ($(ui.helper).hasClass('cloned')){
-            return
+            
           }
             var stuff = $(ui.helper).clone();
             stuff.addClass('cloned');
@@ -38,6 +37,13 @@
         }
 
       });
+
+      $scope.postLevel = function (lvl) {
+        LevelFactory.newLevel(lvl).success(
+          function (data) {
+            console.log(data);
+          });
+      };
 
 
 

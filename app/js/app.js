@@ -4,6 +4,15 @@
 
   angular.module('AMH', ['ngRoute'])
 
+  .constant('RANDY', {
+    URL: '',
+    CONFIG: {
+      headers: {
+        'Content-Type' : 'application/json',
+      }
+    }
+  })
+
   .config( ['$routeProvider',
     function ($routeProvider) {
 
